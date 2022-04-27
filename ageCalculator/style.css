@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    box-shadow: 0 0 4px 1px rgb(179, 169, 169);
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;  
+    flex-direction: column;  
+}
+.container p{
+    color: rgb(20, 94, 82);
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.date-container label{
+    font-size: larger;
+    margin-right:10px;    
+}
+#birthDate,#currentDate{
+    width: 140px;
+    height: 40px;
+    border:none;
+    box-shadow: 0 0 2px 1px rgb(210, 197, 197);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(149, 79, 79);
+    font-size: larger;
+}
+#calculateBtn{
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: rgb(198, 204, 198);
+    color:white; */
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px rgb(56, 84, 56);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#calculateBtn:active{
+  box-shadow: 0 0 0 0;   
+}
