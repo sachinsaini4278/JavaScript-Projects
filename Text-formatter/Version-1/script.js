@@ -15,7 +15,8 @@ function formatText(index){
 }
 
 function capitalizeWord(str){    
-    let splitSentence = str.split(" ");    
+    let newString = removeExtraSpaces(str);
+    let splitSentence = newString.split(" ");
     console.log(splitSentence)
     for (let i = 0; i < splitSentence.length; i++) {        
         splitSentence[i] = splitSentence[i][0].toUpperCase()+splitSentence[i].slice(1);
@@ -26,7 +27,8 @@ function capitalizeWord(str){
     return splitSentence;
 }
 function capitalizeSentence(str){    
-    let splitSentence = str.split(". ");
+    let newString = removeExtraSpaces(str);
+    let splitSentence = newString.split(". ");    
     // console.log(splitSentence)
     for (let i = 0; i < splitSentence.length; i++) {                
         splitSentence[i] = splitSentence[i][0].toUpperCase()+splitSentence[i].slice(1);
@@ -35,4 +37,7 @@ function capitalizeSentence(str){
     splitSentence=splitSentence.join(". ");
     // console.log(splitSentence)
     return splitSentence;
+}
+function removeExtraSpaces(str){
+    return str.replace(/\s+/g,' ').trim();
 }
