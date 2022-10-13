@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    padding-top: 20px;
+    width: 100vw;
+    height: 100vh;    
+}
+.container textarea{
+    width: 70%;
+    height: 40%;    
+    outline: none;
+    border-radius: 10px;    
+    font-size: 20px;
+    font-family: Cambria;
+    max-width: 780px;    
+    resize:vertical;
+    margin-top: 20px; 
+    padding: 4px;
+    padding-top: 10px;  
+    transition: box-shadow .15s ease-in-out;
+}
+.container textarea:focus{
+    box-shadow: 0px 0px 2px 4px rgb(177, 217, 234);
+}
+.heading{
+    color:rgb(63, 95, 96);
+}
+.options-container{
+    display: flex;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.label{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:4px;
+    padding: 10px;
+    /* width:300px;     */
+    border-radius: 4px;
+    box-shadow: 4px 4px 6px 1px rgb(99, 124, 125);   
+    font-size: 20px;    
+    color:rgb(63, 95, 96);    
+    transition: all 0.5s;
+}
+.options label:hover{
+    cursor: pointer;
+    background-color: rgb(141, 157, 156);
+    color:black;
+}
+.options input[type="radio"]{
+    display: none;
+}
+.options input[type="radio"]:checked+label{
+    background-color: rgb(82, 167, 161);
+    color: white;    
+    box-shadow: 2px 1px 1px 1px rgb(99, 124, 125);   
+}
