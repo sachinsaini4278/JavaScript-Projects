@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.clock-container{
+ padding:15px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px rgb(168, 158, 158);
+}
+#clock{
+    color: rgb(95, 95, 180);
+    font-size: 80px;
+}
+#date{
+    color:rgb(176, 176, 209);
+}
