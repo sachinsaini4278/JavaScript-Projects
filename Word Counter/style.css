@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    padding-top: 20px;
+    width: 100vw;
+    height: 100vh;    
+    background-color: rgb(95, 94, 88);
+    color:white;
+}
+.container textarea{
+    width: 70%;
+    height: 40%;    
+    outline: none;
+    border-radius: 10px;    
+    font-size: 20px;
+    font-family: Cambria;
+    max-width: 780px;    
+    resize:vertical;
+    margin-top: 20px; 
+    padding: 4px;
+    padding-top: 10px;  
+    transition: box-shadow .15s ease-in-out;
+}
+.container textarea:focus{    
+    box-shadow: 0px 0px 2px 4px rgb(150, 148, 138);
+}
+.outputBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;        
+}
+.outputBox div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.outputBox input{    
+    width:90px;
+    height: 40px;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(91, 86, 86);
+    border:none;
+    border-radius: 4px;
+    background-color:rgb(220, 222, 225);
+    color: rgb(144, 50, 6);
+    font-weight: bold;
+    font-size: larger;
+}
+.outputBox label{
+    font-weight: bold;
+    font-size: larger;
+    /* color:rgb(33, 26, 26); */
+}
